@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>My Personal Information</title>
+    <!-- font icons -->
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar">
+        <div class="container">     
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Enisa Nilasari</span>
+            </h1>
+            <p class="header-subtitle">STUDENT</p>            
+
+            <button class="btn btn-primary">About</button>
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="imgs/enisa1.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        Hello! I am Enisa Nilasari, a student who is currently undergoing an educational journey at Tadulako University.  I have a deep desire to learn and grow in various fields of science, with a main focus on BackEnd.  In addition, I am currently participating in the Bangkit Academy Program as a Cloud Computing Learning Path, which can allow me to expand my social network, acquire more skills in cloud Computing.
+                    </p>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <h6 class="section-title mb-6">My Education</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/graduation-cap.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">MIA ALHAIRAT</h6>
+                            <p class="subtitle">2010-2016</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/graduation-cap.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">SMP Negeri 6 Palu</h6>
+                            <p class="subtitle">2016-2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/graduation-cap.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">SMA Negeri 3 Palu</h6>
+                            <p class="subtitle">2018-2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/graduation-cap.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Universitas Tadulako</h6>
+                            <p class="subtitle">2021-Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+
+
+        <footer>
+        <div class="footer">
+          <h2>Find Me</h2>
+          <div class="ikon-container">
+            <div class="ikon">
+              <a href="https://www.linkedin.com/in/enisa-nilasari-614118281/"></a><img src="imgs/linkedin.png" alt="linkedin" style="width: 50px; height: 50px;"></a>
+            </div>
+            <div class="ikon">
+              <img src="imgs/facebook.png" alt="facebook" style="width: 50px; height: 50px;"></a>
+            </div>
+            <div class="ikon">
+             <a href="https://github.com/enisanilaa22" ><img src="imgs/github.png" alt="github" style="width: 50px; height: 50px;"></a>
+          </div>
+        </div>
+      </footer>
+	
+	<!-- core  -->
+    <script>
+        $(document).ready(function(){
+    $(".navbar .nav-link").on('click', function(event) {
+
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 700, function(){
+                window.location.hash = hash;
+            });
+        } 
+    });
+});
+
+// navbar toggle
+$('#nav-toggle').click(function(){
+    $(this).toggleClass('is-active')
+    $('ul.nav').toggleClass('show');
+});
+    </script>
+
+</body>
+</html>
